@@ -75,6 +75,10 @@ body{
     gap: 40px;
 }
 
+.header-menu-item{
+    position: relative;
+}
+
 .header-menu-link{
     display: block;
     font-weight: 500;
@@ -93,12 +97,13 @@ body{
 .header-menu-link:focus{
     color: #404bbf
 }
-.active-menu-item{
+
+/*.active-menu-item{
     position: relative;
     color: #404bbf;
-}
+}*/
 
-.active-menu-item::after{
+/*.active-menu-item::after{
     content: '';
     width: 100%;
     position: absolute;
@@ -107,7 +112,7 @@ body{
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-}
+}*/
 
 .header-adderes{
     font-style: normal;
@@ -494,7 +499,7 @@ footer{
     background-color: #31D0AA;
 }
 
-.footer-soc-link:hover{
+.footer-soc-link:focus{
     background-color: #31d0aa;
 }
 
