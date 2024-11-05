@@ -216,6 +216,8 @@ footer{
     background-color: #F4F4FD;
     margin-bottom: 8px;
     padding: 24px 100px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
 }
 
 .features-item-img{
@@ -305,6 +307,10 @@ footer{
     justify-content: center;
 }
 
+.team-soc-link:hover{
+    background-color: #31D0AA;
+}
+
 .team-soc-img{
     fill: #FFFFFF;
     width: 16px;
@@ -331,10 +337,6 @@ footer{
     margin-bottom: 72px;
 }
 
-.portfolio-item-img{
-
-}
-
 .portfolio-menu-list{
     display:flex;
     flex-wrap: wrap;
@@ -352,13 +354,42 @@ footer{
 }
 .portfolio-menu-item{
     width: calc((100% - 48px) / 3);
+    position: relative;
 }
+
+.portfolio-menu-item:hover .portfolio-item-text-hov{
+    transform: translate(0);
+    visibility: visible;
+}
+
+.text-cover-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
 .portfolio-item-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.portfolio-item-text-hov{
+    position: absolute;
+    background: #4D5AE5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 40px 32px;
+    transform: translateY(100%);
 }
 
 .footer{
@@ -406,6 +437,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.footer-soc-link:hover{
+    background-color: #31D0AA;
 }
 .footer-soc-img{
     fill: #FFFFFF;
