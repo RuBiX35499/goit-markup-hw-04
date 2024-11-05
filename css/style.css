@@ -83,6 +83,7 @@ body{
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover{
@@ -94,18 +95,18 @@ body{
 }
 .active-menu-item{
     position: relative;
+    color: #404bbf;
 }
 
 .active-menu-item::after{
     content: '';
     width: 100%;
-    height: 4px;
-    display: block;
-    border-radius: 2px;
-    background-color: #404BBF;
     position: absolute;
     left: 0;
     bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .header-adderes{
@@ -120,13 +121,14 @@ body{
 }
 
 .addres-menu-item{
-    
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .addres-item-link{
     line-height: 1.5;
     color:#434455;
     letter-spacing: 0.02em;
+    
 }
 
 .addres-item-link:hover{
@@ -310,8 +312,8 @@ body{
 }
 
 .team-soc-link{
-    width: 16px;
-    height: 16px;
+    width: 40px;
+    height: 40px;
     background-color: #4D5AE5;
     border-radius: 50%;
     display: flex;
@@ -321,13 +323,14 @@ body{
 }
 
 .team-soc-link:hover{
-    background-color: #31D0AA;
+    background-color: #404bbf;
+}
+.team-soc-link:focus{
+    background-color: #404bbf;
 }
 
 .team-soc-img{
-    fill: #FFFFFF;
-    width: 16px;
-    height: 16px;
+    fill:#f4f4fd;
 }
 .portfolio{
     padding-top: 120px;
