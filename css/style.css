@@ -445,6 +445,7 @@ footer{
 
 .footer-conteiner{
     display: flex;
+    align-items: baseline;
 }
 .accent-footer{
     color:#f4f4fd;
@@ -456,6 +457,11 @@ footer{
     color:#F4F4FD;
     max-width: 264px;
 }
+
+.footer-main-conteiner{
+    margin-right: 120px;
+}
+
 .footer-soc-menu{
     display: flex;
     gap: 16px;
@@ -478,4 +484,8 @@ footer{
     fill: #FFFFFF;
     width: 24px;
     height: 24px;
+}
+
+.footer-soc-conteiner{
+    
 }
