@@ -359,7 +359,7 @@ footer{
 
 .portfolio-menu-item:hover .portfolio-item-text-hov{
     transform: translate(0);
-    visibility: visible;
+    transition: transform 250ms ease;
 }
 
 .text-cover-wrapper{
