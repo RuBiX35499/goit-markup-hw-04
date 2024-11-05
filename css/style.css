@@ -76,7 +76,8 @@ body{
 }
 
 .header-menu-link{
-    
+    color: #404bbf;
+    position: relative;
 }
 
 .active-menu-link::after{
